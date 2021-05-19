@@ -33,12 +33,12 @@
 
     <!-- BEGIN TABS -->
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Portfolio')">
+      <button class="tablinks" onclick="openTab(event, 'Portfolio')">
         Portfolio
       </button>
-      <button class="tablinks" onclick="openCity(event, 'About')">About Me</button>
-      <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
-      <button class="tablinks" onclick="openCity(event, 'ThreeD')">3D / AR / XR</button>
+      <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
+      <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+      <button class="tablinks" onclick="openTab(event, 'ThreeD')">3D / AR / XR</button>
     </div>
     <!-- END TABS -->
 
@@ -516,24 +516,24 @@
     <div id="ThreeD" class="tabcontent">
       <div class="container">
 
-        <video class="lazy" width="300" muted plasysinline autoplay loop>
-          <source data-src="/3d/metaballs.mp4" type="video/mp4">
+        <video width="300" muted plasysinline autoplay loop>
+          <source src="/3d/metaballs.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-        <video class="lazy" width="300" muted plasysinline autoplay loop>
-          <source data-src="/3d/organic-ball.mp4" type="video/mp4">
+        <video width="300" muted plasysinline autoplay loop>
+          <source src="/3d/organic-ball.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-        <video class="lazy" width="300" muted plasysinline autoplay loop>
-          <source data-src="/3d/organic-head.mp4" type="video/mp4">
+        <video width="300" muted plasysinline autoplay loop>
+          <source src="/3d/organic-head.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-        <video class="lazy" width="300" muted plasysinline autoplay loop>
-          <source data-src="/3d/trippy-eye.mp4" type="video/mp4">
+        <video width="300" muted plasysinline autoplay loop>
+          <source src="/3d/trippy-eye.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-        <video class="lazy" width="300" muted plasysinline autoplay loop>
-          <source data-src="/3d/twisty.mp4" type="video/mp4">
+        <video width="300" muted plasysinline autoplay loop>
+          <source src="/3d/twisty.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
 
@@ -691,9 +691,9 @@
 
     <!-- SCRIPTS -->
     <script>
-      openCity(event, 'Portfolio');
+      openTab(event, 'Portfolio');
 
-      function openCity(evt, tabName) {
+      function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -708,7 +708,6 @@
       }
     </script>
 
-<script src="https://cdn.jsdelivr.net/npm/yall@0.3.2/lib/index.min.js"></script>
 
   </body>
 </html>
